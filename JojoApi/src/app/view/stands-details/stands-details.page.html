@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Detalhes do Stand</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngIf="stand">
+    <ion-card-header>
+      <ion-card-title>{{ stand.name }}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p>Abilities: {{ stand.abilities }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

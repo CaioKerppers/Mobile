@@ -1,0 +1,27 @@
+/* Estilos para a página StandsDetails */
+
+/* Esquema de cores e fundo */
+.stands-details-page {
+    background-color: #8b0000; /* Vermelho escuro */
+    color: #fff; /* Texto branco */
+  }
+  
+  /* Título da página */
+  .stands-details-page h1 {
+    font-family: 'Arial', sans-serif; /* Fonte principal */
+    font-size: 28px;
+  }
+  
+  /* Card de detalhes do Stand */
+  .stands-details-page .stand-details-card {
+    background-color: #dc143c; /* Vermelho escuro */
+    color: #fff;
+    border: 2px solid #dc143c;
+  }
+  
+  /* Hover no card */
+  .stands-details-page .stand-details-card:hover {
+    background-color: #fff; /* Fundo branco ao passar o mouse */
+    color: #dc143c; /* Texto vermelho escuro ao passar o mouse */
+  }
+  
