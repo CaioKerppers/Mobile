@@ -1,0 +1,67 @@
+// Cores base
+$jojo-purple: #6a1b9a;
+$jojo-yellow: #ffeb3b;
+$jojo-red: #f44336;
+$jojo-green: #4caf50;
+$jojo-blue: #2196f3;
+
+// Estilos de fundo
+.home {
+  background-color: $jojo-purple;
+  color: $jojo-yellow;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  ion-header {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Bangers', sans-serif;
+    color: $jojo-purple;
+  }
+
+  p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .jojo-logo {
+    ion-title {
+      font-family: 'Arial', sans-serif;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      padding-top: 10px;
+  
+      .jojo-logo-icon {
+        max-width: 20px;
+        max-height: 20px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .action-button {
+    background-color: $jojo-red;
+    color: $jojo-yellow;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken($jojo-red, 10%);
+    }
+  }
+}
+
+.ion-padding {
+  --ion-background-color: $jojo-purple;
+}

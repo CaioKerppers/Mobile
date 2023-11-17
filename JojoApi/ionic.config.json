@@ -1,0 +1,13 @@
+{
+  "name": "JojoApi",
+  "integrations": {
+    "capacitor": {},
+    "proxy": {
+      "proxyUrl": "https://jojos-bizarre-api.netlify.app/api",
+      "pathRewrite": {
+        "^/api": ""
+      }
+    }
+  },
+  "type": "angular"
+}

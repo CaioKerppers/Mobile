@@ -1,0 +1,130 @@
+// Variáveis de cores
+$jojo-purple: #7b1fa2;
+$jojo-yellow: #ffd700;
+$jojo-red: #c62828;
+$jojo-green: #4caf50;
+$jojo-blue: #1565c0;
+
+// Estilos globais
+$font-family: 'Arial', sans-serif;
+
+// Estilos para o tema JoJo
+.jojo-theme {
+  ion-content {
+    --ion-background-color: $jojo-purple;
+    color: $jojo-yellow;
+
+    .jojo-text {
+      color: $jojo-yellow;
+      font-weight: bold;
+    }
+
+    .jojo-link {
+      color: $jojo-blue;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  ion-header {
+    --ion-background-color: $jojo-red;
+    color: $jojo-yellow;
+
+    ion-toolbar {
+      --ion-color-base: $jojo-red;
+
+      ion-title {
+        font-family: $font-family;
+        font-weight: bold;
+      }
+    }
+  }
+
+  ion-footer {
+    --ion-background-color: $jojo-red;
+    color: $jojo-yellow;
+  }
+
+  ion-title {
+    font-family: $font-family;
+    font-weight: bold;
+  }
+
+  ion-button {
+    --background: $jojo-green;
+    --color: $jojo-yellow;
+    --border-radius: 10px;
+    font-weight: bold;
+
+    &.jojo-button-outline {
+      --background: transparent;
+      border: 2px solid $jojo-green;
+    }
+  }
+
+  ion-card {
+    --ion-background-color: $jojo-red;
+    color: $jojo-yellow;
+
+    ion-card-header {
+      --ion-background-color: $jojo-red;
+      color: $jojo-yellow;
+    }
+
+    ion-card-title,
+    ion-card-subtitle,
+    ion-card-content {
+      color: $jojo-yellow;
+    }
+  }
+
+  ion-list {
+    --ion-background-color: $jojo-red;
+
+    ion-item {
+      --ion-background-color: $jojo-red;
+
+      .jojo-item-text {
+        color: $jojo-yellow;
+      }
+
+      &.jojo-item-dark {
+        --ion-background-color: $jojo-purple;
+      }
+    }
+  }
+
+  ion-input,
+  ion-textarea {
+    --ion-color: $jojo-yellow;
+    --ion-background-color: $jojo-red;
+    --ion-padding: 10px;
+    border-radius: 8px;
+  }
+
+  ion-toggle {
+    --background: $jojo-green;
+    --knob-background: $jojo-yellow;
+  }
+
+  ion-range {
+    --bar-background-active: $jojo-red;
+    --bar-background-inactive: $jojo-purple;
+    --thumb-background: $jojo-yellow;
+  }
+
+  ion-spinner {
+    --color: $jojo-yellow;
+  }
+
+  ion-alert {
+    --background: $jojo-red;
+    --header-background-color: $jojo-red;
+    --color: $jojo-yellow;
+  }
+
+  // Estilos para outros componentes, conforme necessário
+}
