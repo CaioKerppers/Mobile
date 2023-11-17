@@ -1,0 +1,21 @@
+.jojo-theme {
+  ion-content.stands {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+
+    ion-list {
+      ion-item {
+        background-color: #2a2a2a;
+        color: #ffffff;
+        border-bottom: 1px solid #3f3f3f;
+        font-size: 16px;
+      }
+
+      ion-item.stands-details {
+        background-color: #3a3a3a;
+        border-bottom: 1px solid #4f4f4f;
+      }
+    }
+  }
+}
