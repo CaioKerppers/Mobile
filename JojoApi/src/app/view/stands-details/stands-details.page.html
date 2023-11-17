@@ -1,0 +1,26 @@
+<ion-header class="jojo-theme">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/stands"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Detalhes do Stand</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="jojo-theme stands-details">
+  <ion-card *ngIf="stand">
+    <ion-card-header>
+      <ion-card-title>{{ stand.name }}'s Profile</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p><strong>Name:</strong> {{ stand.name }}</p>
+      <p><strong>Alternate Name:</strong> {{ stand.alternateName }}</p>
+      <p><strong>Japanese:</strong> {{ stand.japaneseName }}</p>
+      <p><strong>Stand User:</strong> {{ stand.standUser }}</p>
+      <p><strong>Chapter:</strong> {{ stand.chapter }}</p>
+      <p><strong>Abilities:</strong> {{ stand.abilities }}</p>
+      <p><strong>Battlecry:</strong> {{ stand.battlecry }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

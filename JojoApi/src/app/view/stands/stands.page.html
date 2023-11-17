@@ -1,0 +1,19 @@
+<ion-header class="jojo-theme">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Stands</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="jojo-theme stands">
+  <ion-searchbar [(ngModel)]="queryType" (ionChange)="searchStandsByQuery()"></ion-searchbar>
+  <ion-searchbar [(ngModel)]="queryValue" (ionChange)="searchStandsByQuery()"></ion-searchbar>
+
+  <ion-list>
+    <ion-item class="stands-details" *ngFor="let stand of stands" [routerLink]="['/stands-details', stand.id]">
+      {{ stand.name }}
+    </ion-item>
+  </ion-list>
+</ion-content>
