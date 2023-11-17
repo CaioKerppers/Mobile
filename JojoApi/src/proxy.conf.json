@@ -1,8 +1,0 @@
-{
-    "/api": {
-      "target": "https://jojos-bizarre-api.netlify.app",
-      "secure": false,
-      "logLevel": "debug"
-    }
-  }
-  
